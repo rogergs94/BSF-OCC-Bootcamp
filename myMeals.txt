@@ -1,2 +1,3 @@
 Breakfast: French Toast
 Lunch: Burguer and Fries
+Dinner: Soup
