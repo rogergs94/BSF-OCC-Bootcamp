@@ -20,5 +20,18 @@ git add filename --> stages file
 git commit -m "commit message" --> committing files in the staging area (stage 2 to 3)
 git rm --cached filename --> removes a file from the staging area
 git add . --> To add everything
-git reset --> To remove everything
-git log --oneline
+
+git reset --> To remove all files in the staging area
+
+git log --> To see commit history
+git log --oneline --> Shortens commit history
+
+BRANCHING
+
+git branch name-branch --> Create new branch
+git branch -a --> to see all branches.
+git switch name-branch or git checkout name-branch --> to change a branch
+
+git merge newBranchA --> to merge a branch (newBranchA) into another (branch we are on)
+git branch -d branchname --> To delete the branch if merged in master branch.
+git branch -D branchname --> to delete the branch regardless if it´s merged or not.
