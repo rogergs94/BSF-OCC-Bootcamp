@@ -1,0 +1,14 @@
+Configuration Commands
+
+git config --global user.name Your-username --> To change username
+git config --global user.email your-email --> To change email
+git config user.name --> To track username
+git config user.email --> To check email
+
+Creating Repos
+
+git init --> Initialize local git repo
+
+Consulting Repos
+
+ls -a --> To consult the hidden archives
