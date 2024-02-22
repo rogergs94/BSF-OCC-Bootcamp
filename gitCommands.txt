@@ -28,10 +28,17 @@ git log --oneline --> Shortens commit history
 
 BRANCHING
 
-git branch name-branch --> Create new branch
+git branch branchname --> Create new branch
 git branch -a --> to see all branches.
-git switch name-branch or git checkout name-branch --> to change a branch
+git switch branchname or git checkout branchname--> to change a branch
+git checkout commitID --> to see state of the code in a particular commit
 
 git merge newBranchA --> to merge a branch (newBranchA) into another (branch we are on)
 git branch -d branchname --> To delete the branch if merged in master branch.
 git branch -D branchname --> to delete the branch regardless if it´s merged or not.
+
+REMOTE REPOSITORIES
+
+git remote add origin URLtoRemoteRepo --> To link remote repo to local repo
+git branch -M main --> To rename master branch to "main"
+git push -u origin main --> Pushing into origin main branch
