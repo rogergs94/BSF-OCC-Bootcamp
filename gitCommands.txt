@@ -12,3 +12,12 @@ git init --> Initialize local git repo
 Consulting Repos
 
 ls -a --> To consult the hidden archives
+
+Commiting
+
+git status --> To show which files are in the staging area (stage 1 to 2)
+git add filename --> stages file
+git commit -m "commit message" --> committing files in the staging area (stage 2 to 3)
+git rm --cached filename --> removes a file from the staging area
+git add . --> To add everything
+git reset --> To remove everything
