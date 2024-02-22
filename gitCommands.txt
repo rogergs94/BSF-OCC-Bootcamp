@@ -21,3 +21,4 @@ git commit -m "commit message" --> committing files in the staging area (stage 2
 git rm --cached filename --> removes a file from the staging area
 git add . --> To add everything
 git reset --> To remove everything
+git log --oneline
