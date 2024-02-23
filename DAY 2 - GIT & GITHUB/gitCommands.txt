@@ -42,3 +42,5 @@ REMOTE REPOSITORIES
 git remote add origin URLtoRemoteRepo --> To link remote repo to local repo
 git branch -M main --> To rename master branch to "main"
 git push -u origin main --> Pushing into origin main branch
+
+git remote remove origin --> To eliminate or remove remote origin 
