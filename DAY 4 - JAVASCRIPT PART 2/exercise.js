@@ -7,16 +7,15 @@
 5. Log the result of each function call to the console, indicating whether the numbers are even or odd
 */
 
+var num=10
+
 function checkEvenOrOdd(num) {
+    console.log(num, )
     if (num %2 ==0) {
-        console.log("It´s an even number");
+        console.log("is an even number");
     }else{
-        console.log("It´s and odd number");
+        console.log("is and odd number");
     }
 }
 
-num1=10
-num2=5
-
-checkEvenOrOdd(num1);
-checkEvenOrOdd(num2);
+checkEvenOrOdd(num);
