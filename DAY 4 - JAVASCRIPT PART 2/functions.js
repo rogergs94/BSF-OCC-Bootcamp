@@ -1,13 +1,13 @@
 //Functions --> Allows us to write reusable block of codes and also provide ways to organize and structure codes
 
-//  Declaring a function
+//  1. Declaring a function
 function greet() {
     console.log ("Hello to the world of functions!");
     console.log ("Hello to the world of functions!");
     console.log ("Hello to the world of functions!");
 }
 
-//  Calling the function:
+//  2. Calling the function:
 greet();
 greet();
 
@@ -32,6 +32,20 @@ function greetme(name) {
 }
 
 greetme("Regel"); //"Regel is an argument. It´s the actual value itself". This is static
+
+function higherOrderFunction(variable) {
+    console.log ("This is the higher-order function speaking", variable);
+}
+
+function PassedFunction() {
+    console.log("This is the passed function being called");
+}
+
+let num=5
+
+higherOrderFunction()
+
+
 
 //Functions with a return value
 function sum(a, b) {

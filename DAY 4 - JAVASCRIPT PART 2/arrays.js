@@ -24,7 +24,7 @@ characters.forEach(function(character){
     console.log(character)
 }) //for each of the elements in the array, it´s going to execute a function
 
-//Array Methods
+//Array Methods //methods have parenthesis; Properties dont have parenthesis.
 
 // push
 // pop
