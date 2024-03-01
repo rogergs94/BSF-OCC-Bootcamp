@@ -12,7 +12,8 @@ class Animal {
     }
 
 }
-//Create a child class Dog
+//Create a child class Dog from the parent class
+// extends will inheritance all the properties and modules of Animals in Dog/Cat.
 class Dog extends Animal { //extends will be followed by the class we want to inheritate the new animal "dog" and "cat". These will be included in "Animals".
     bark (){
         console.log("Woof woof!");

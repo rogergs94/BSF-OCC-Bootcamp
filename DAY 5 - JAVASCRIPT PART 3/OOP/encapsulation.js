@@ -1,6 +1,7 @@
 //Encapsulation
 
 //We are going to create a class followed by the name of the object that we want to create. Inside we will create properties
+//We use this to create properties.
 class BankAccount {
     constructor(accountNumber, balance){
         this.accountNumber = accountNumber; 
