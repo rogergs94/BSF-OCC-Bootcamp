@@ -1,0 +1,59 @@
+Once in MongoDB Compass:
+CRUD operations provide a standardized way to interact with data in a database system, making it easier to develop, maintain, and understand applications that rely on data storage. 
+
+Create (C):
+The "Create" operation involves adding new data records or entities to a database.
+
+Read (R):
+The "Read" operation involves retrieving or querying existing data records from a database.
+
+Update (U):
+The "Update" operation involves modifying existing data records in a database.
+
+Delete (D):
+The "Delete" operation involves removing existing data records from a database.
+
+--------
+
+TERMINAL EN MONDODB COMPASS:
+Create (C):
+
+show dbs --> muestra las BBDD que tenemos
+use blogPost --> cambia a la BD  "blogPost"
+1.- db.collectionName.instertOne ({"field": "value"});  --> Crear un usuario con X propiedades.
+2.- db.collectionName.instertMany ([{"field": "value"}, {"field": "value"}]);  --> insertar muchos o múltiples users en la BD con X propiedades.
+
+Read (R):
+
+1.- db.users.find(); --> Consulta todos los archivos (files) sin filtro en la BD users.
+2.- db.users.find({"age":29});
+3.- db.users.find().limit(3); --> debe mostrar sólo los 3 primeros registros o archivos.
+4.- db.users.find({"status":"inactive"}).limit(3); --> muestra los usuarios inactivos con un máximo de 3 (3 primeros registros).
+5.- db.users.find().sort( {"username": 1}); --> busca los usuarios por orden ascendente (1) según el username
+6.- db.users.find().sort( {"username": -1}); --> busca los usuarios por orden descendente (-1) según el username
+
+Update (U):
+
+1.- db.users.updateOne ({"username": "jane_smith"}, { $set: { "status":"active", "age": 26}}); --> selecciona a jane_smith y cambia el status a active y age a 26.
+2.- db.collectionName.updateMany({ "field": "value" }, { $set: { "field": "value" }}); --> actualiza múltiples documentos
+
+Delete (D):
+
+
+1 - db.collectionName.deleteOne({ "field": "value" }); --> Elimina los documentos con X values
+2 - db.collectionName.deleteMany({ "field": "value" }); --> Elimina todos los documentos con X values 
+3 - db.collectionName.deleteMany({}); --> deletes all the documents inside a collection
+
+----------
+
+OPERATORS
+1.- db.users.find({ "age": { $eq: 20 }}); --> equal
+2.- db.users.find({ "age": { $ne: 20 }}); --> non-equal
+3.- db.users.find({ "age": { $gt: 20 }}); --> mayor que 20
+4.- db.users.find({ "age": { $lt: 20 }}); --> menor que 20
+5.- db.users.find({ "age": { $gte: 20 }}); --> mayor o igual que 20
+6.- db.users.find({ "age": { $lte: 20 }}); --> menor o igual que 20
+
+-----------
+LOGICAL OPERATORS
+1.- db.users.find({$and:[{"status": "active"}, {"age": {$gte: 18}}]}); --> busca los registros o documentos con ambos valores ($and) (active y edad >= 18).
